@@ -249,3 +249,46 @@ footer {
 .voltar a:hover {
   background: #43914d;
 }
+
+#menu-toggle {
+  display: none;
+}
+
+/* Ícone do menu no mobile */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #3a7d44;
+  cursor: pointer;
+  user-select: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #e6f2e9;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 10px;
+    gap: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}
