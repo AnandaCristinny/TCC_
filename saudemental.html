@@ -10,14 +10,22 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 </style>
 </head>
-<body>
+<script src="script.js"></script>
 
+<body>
 <header>
   <div class="logo">
-    <img src="Fotos/logo.png" alt="Logo Saúde e Estudo" class="logo">
+    <img src="Fotos/logo.png" alt="logo">
     <span>Saúde e Estudo</span>
   </div>
-  <nav>
+
+  <button id="button-toggle" class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="menu" class="menu-fechado">
     <ul>
       <li><a href="index.html">Início</a></li>
       <li><a href="saudemental.html">Saúde Mental</a></li>
@@ -26,6 +34,7 @@
     </ul>
   </nav>
 </header>
+
   <section class="bemvindo">
     <h1>Saúde Mental</h1>
     <p>A mente saudável é a base para uma vida equilibrada. <br> 
