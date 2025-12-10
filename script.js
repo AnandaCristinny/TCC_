@@ -7,3 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
         menu.classList.toggle("menu-fechado");
     });
 });
+
+function lerTexto() {
+  const texto = document.querySelector(".conteudo-artigo").innerText;
+
+  const fala = new SpeechSynthesisUtterance(texto);
+  fala.lang = "pt-BR";
+  fala.rate = 1;
+  fala.pitch = 1;
+
+  speechSynthesis.cancel(); 
+  speechSynthesis.speak(fala);
+}
+
+function pararLeitura() {
+  speechSynthesis.cancel();
+}
