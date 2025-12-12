@@ -9,6 +9,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
   </style>
 </head>
+<script src="../script.js"></script>
 <body>
 
 <header>
@@ -16,7 +17,15 @@
     <img src="../Fotos/logo.png" alt="Logo Saúde e Estudo" class="logo">
     <span>Saúde e Estudo</span>
   </div>
-  <nav>
+
+
+ <button id="button-toggle" class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="menu" class="menu-fechado">
     <ul>
       <li><a href="../index.html">Início</a></li>
       <li><a href="../saudemental.html">Saúde Mental</a></li>
@@ -31,6 +40,9 @@
 
   <button onclick="lerTexto()" class="btn-audio">🔊 Ouvir conteúdo</button>
 <button onclick="pararLeitura()" class="btn-audio parar">⏹ Parar</button>
+
+<img src="../Fotos/turbinam.png" alt="Ilustração sobre saúde mental" class="img-conteudo">
+<p class="fonte-img">Imagem: Produção própria</p>
 
   <p>Você já deve ter percebido que existem dias em que parece impossível se concentrar nos estudos. A mente dispersa, o raciocínio lento e a sensação de cansaço aparecem mesmo quando você dormiu bem. O que poucos lembram é que isso muitas vezes tem relação direta com a alimentação.</p>
 
