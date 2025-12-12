@@ -9,14 +9,22 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
   </style>
 </head>
+<script src="../script.js"></script>
 <body>
 
 <header>
   <div class="logo">
-    <img src="../Fotos/logo.png" alt="Logo Saúde e Estudo" class="logo">
+    <img src="../Fotos/logo.png" alt="logo">
     <span>Saúde e Estudo</span>
   </div>
-  <nav>
+
+  <button id="button-toggle" class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="menu" class="menu-fechado">
     <ul>
       <li><a href="../index.html">Início</a></li>
       <li><a href="../saudemental.html">Saúde Mental</a></li>
@@ -31,6 +39,9 @@
 
   <button onclick="lerTexto()" class="btn-audio">🔊 Ouvir conteúdo</button>
 <button onclick="pararLeitura()" class="btn-audio parar">⏹ Parar</button>
+
+<img src="../Fotos/lanches.png" alt="Ilustração sobre saúde mental" class="img-conteudo">
+<p class="fonte-img">Imagem: Produção própria</p>
 
   <p>Todo estudante já passou por isso: bate aquela fome no meio da tarde, o cansaço chega, e o primeiro impulso é abrir um pacote de biscoito, um salgadinho ou um refrigerante gelado. Parece a escolha mais fácil — mas o que parece “prático” pode ser justamente o que está roubando sua energia e atrapalhando seus estudos.</p>
 
