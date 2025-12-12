@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../css/estilo.css">
+  
   <title>Alongamentos Essenciais Para Quem Estuda Sentado</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
   </style>
 </head>
+<script src="../script.js"></script>
 <body>
 
 <header>
@@ -16,7 +18,15 @@
     <img src="../Fotos/logo.png" alt="Logo Saúde e Estudo" class="logo">
     <span>Saúde e Estudo</span>
   </div>
-  <nav>
+
+
+ <button id="button-toggle" class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="menu" class="menu-fechado">
     <ul>
       <li><a href="../index.html">Início</a></li>
       <li><a href="../saudemental.html">Saúde Mental</a></li>
@@ -33,6 +43,9 @@
 
 <button onclick="lerTexto()" class="btn-audio">🔊 Ouvir conteúdo</button>
 <button onclick="pararLeitura()" class="btn-audio parar">⏹ Parar</button>
+
+<img src="../Fotos/alongamentos.png" alt="Ilustração sobre saúde mental" class="img-conteudo">
+<p class="fonte-img">Imagem: Produção própria</p>
 
 <p>Passar horas estudando sentado parece inofensivo, mas o corpo sente — e muito. Ombros tensionados, pescoço rígido, costas doloridas… tudo isso atrapalha o foco, o humor e até o rendimento nos estudos. Às vezes, o problema não é a matéria difícil, e sim o corpo pedindo socorro.</p>
 
